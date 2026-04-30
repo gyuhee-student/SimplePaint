@@ -1,4 +1,4 @@
-namespace SimplePaint
+Ôªønamespace SimplePaint
 {
     partial class Form1
     {
@@ -40,11 +40,16 @@ namespace SimplePaint
             trbLineWidth = new TrackBar();
             btnOpenFile = new Button();
             btnSaveFile = new Button();
+            btnZoomOut = new Button();
+            lblZoomRate = new Label();
+            btnZoomIn = new Button();
+            pnlCanvas = new Panel();
             picCanvas = new PictureBox();
             gbxShape.SuspendLayout();
             gbxColor.SuspendLayout();
             gbxdukke.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)trbLineWidth).BeginInit();
+            pnlCanvas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)picCanvas).BeginInit();
             SuspendLayout();
             // 
@@ -64,53 +69,53 @@ namespace SimplePaint
             gbxShape.Controls.Add(btnCircle);
             gbxShape.Controls.Add(btnRectangle);
             gbxShape.Controls.Add(btnLine);
-            gbxShape.Font = new Font("»ﬁ∏’µ’±Ÿ«ÏµÂ∂Û¿Œ", 12F, FontStyle.Regular, GraphicsUnit.Point, 129);
+            gbxShape.Font = new Font("Ìú¥Î®ºÎë•Í∑ºÌó§ÎìúÎùºÏù∏", 12F, FontStyle.Regular, GraphicsUnit.Point, 129);
             gbxShape.ForeColor = Color.Blue;
             gbxShape.Location = new Point(26, 120);
             gbxShape.Name = "gbxShape";
             gbxShape.Size = new Size(342, 190);
             gbxShape.TabIndex = 1;
             gbxShape.TabStop = false;
-            gbxShape.Text = "µµ«¸ º±≈√";
+            gbxShape.Text = "ÎèÑÌòï ÏÑ†ÌÉù";
             // 
             // btnCircle
             // 
-            btnCircle.Font = new Font("«‘√ ∑“πŸ≈¡ »Æ¿Â", 10F, FontStyle.Bold, GraphicsUnit.Point, 129);
+            btnCircle.Font = new Font("Ìï®Ï¥àÎ°¨Î∞îÌÉï ÌôïÏû•", 10F, FontStyle.Bold, GraphicsUnit.Point, 129);
             btnCircle.ForeColor = Color.Black;
             btnCircle.Image = (Image)resources.GetObject("btnCircle.Image");
             btnCircle.Location = new Point(234, 70);
             btnCircle.Name = "btnCircle";
             btnCircle.Size = new Size(103, 91);
             btnCircle.TabIndex = 2;
-            btnCircle.Text = "ø¯";
+            btnCircle.Text = "Ïõê";
             btnCircle.TextAlign = ContentAlignment.BottomCenter;
             btnCircle.TextImageRelation = TextImageRelation.ImageAboveText;
             btnCircle.UseVisualStyleBackColor = true;
             // 
             // btnRectangle
             // 
-            btnRectangle.Font = new Font("«‘√ ∑“πŸ≈¡ »Æ¿Â", 10F, FontStyle.Bold, GraphicsUnit.Point, 129);
+            btnRectangle.Font = new Font("Ìï®Ï¥àÎ°¨Î∞îÌÉï ÌôïÏû•", 10F, FontStyle.Bold, GraphicsUnit.Point, 129);
             btnRectangle.ForeColor = Color.Black;
             btnRectangle.Image = (Image)resources.GetObject("btnRectangle.Image");
             btnRectangle.Location = new Point(120, 70);
             btnRectangle.Name = "btnRectangle";
             btnRectangle.Size = new Size(103, 91);
             btnRectangle.TabIndex = 1;
-            btnRectangle.Text = "ªÁ∞¢«¸";
+            btnRectangle.Text = "ÏÇ¨Í∞ÅÌòï";
             btnRectangle.TextAlign = ContentAlignment.BottomCenter;
             btnRectangle.TextImageRelation = TextImageRelation.ImageAboveText;
             btnRectangle.UseVisualStyleBackColor = true;
             // 
             // btnLine
             // 
-            btnLine.Font = new Font("«‘√ ∑“πŸ≈¡ »Æ¿Â", 10F, FontStyle.Bold, GraphicsUnit.Point, 129);
+            btnLine.Font = new Font("Ìï®Ï¥àÎ°¨Î∞îÌÉï ÌôïÏû•", 10F, FontStyle.Bold, GraphicsUnit.Point, 129);
             btnLine.ForeColor = Color.Black;
             btnLine.Image = (Image)resources.GetObject("btnLine.Image");
             btnLine.Location = new Point(6, 70);
             btnLine.Name = "btnLine";
             btnLine.Size = new Size(103, 91);
             btnLine.TabIndex = 0;
-            btnLine.Text = "¡˜º±";
+            btnLine.Text = "ÏßÅÏÑ†";
             btnLine.TextAlign = ContentAlignment.BottomCenter;
             btnLine.TextImageRelation = TextImageRelation.ImageAboveText;
             btnLine.UseVisualStyleBackColor = true;
@@ -118,20 +123,20 @@ namespace SimplePaint
             // gbxColor
             // 
             gbxColor.Controls.Add(cmbColor);
-            gbxColor.Font = new Font("»ﬁ∏’µ’±Ÿ«ÏµÂ∂Û¿Œ", 12F, FontStyle.Regular, GraphicsUnit.Point, 129);
+            gbxColor.Font = new Font("Ìú¥Î®ºÎë•Í∑ºÌó§ÎìúÎùºÏù∏", 12F, FontStyle.Regular, GraphicsUnit.Point, 129);
             gbxColor.ForeColor = Color.Blue;
             gbxColor.Location = new Point(384, 120);
             gbxColor.Name = "gbxColor";
             gbxColor.Size = new Size(216, 190);
             gbxColor.TabIndex = 2;
             gbxColor.TabStop = false;
-            gbxColor.Text = "ªˆ º±≈√";
+            gbxColor.Text = "ÏÉâ ÏÑ†ÌÉù";
             // 
             // cmbColor
             // 
-            cmbColor.Font = new Font("«‘√ ∑“πŸ≈¡ »Æ¿ÂB", 11F, FontStyle.Regular, GraphicsUnit.Point, 129);
+            cmbColor.Font = new Font("Ìï®Ï¥àÎ°¨Î∞îÌÉï ÌôïÏû•B", 11F, FontStyle.Regular, GraphicsUnit.Point, 129);
             cmbColor.FormattingEnabled = true;
-            cmbColor.Items.AddRange(new object[] { "Black ∞À¡§", "Red ª°∞≠", "Blue ∆ƒ∂˚", "Green ≥Ïªˆ" });
+            cmbColor.Items.AddRange(new object[] { "Black Í≤ÄÏ†ï", "Red Îπ®Í∞ï", "Blue ÌååÎûë", "Green ÎÖπÏÉâ" });
             cmbColor.Location = new Point(6, 78);
             cmbColor.Name = "cmbColor";
             cmbColor.Size = new Size(204, 46);
@@ -141,14 +146,14 @@ namespace SimplePaint
             // 
             gbxdukke.AutoSize = true;
             gbxdukke.Controls.Add(trbLineWidth);
-            gbxdukke.Font = new Font("»ﬁ∏’µ’±Ÿ«ÏµÂ∂Û¿Œ", 12F, FontStyle.Regular, GraphicsUnit.Point, 129);
+            gbxdukke.Font = new Font("Ìú¥Î®ºÎë•Í∑ºÌó§ÎìúÎùºÏù∏", 12F, FontStyle.Regular, GraphicsUnit.Point, 129);
             gbxdukke.ForeColor = Color.Blue;
             gbxdukke.Location = new Point(618, 120);
             gbxdukke.Name = "gbxdukke";
             gbxdukke.Size = new Size(288, 190);
             gbxdukke.TabIndex = 3;
             gbxdukke.TabStop = false;
-            gbxdukke.Text = "º± µŒ≤≤";
+            gbxdukke.Text = "ÏÑ† ÎëêÍªò";
             // 
             // trbLineWidth
             // 
@@ -159,36 +164,75 @@ namespace SimplePaint
             // 
             // btnOpenFile
             // 
-            btnOpenFile.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             btnOpenFile.BackColor = Color.FromArgb(192, 255, 255);
-            btnOpenFile.Font = new Font("«—ƒƒ ∞ÌµÒ", 14F, FontStyle.Bold, GraphicsUnit.Point, 129);
+            btnOpenFile.Font = new Font("ÌïúÏª¥ Í≥†Îîï", 14F, FontStyle.Bold, GraphicsUnit.Point, 129);
             btnOpenFile.Location = new Point(924, 162);
             btnOpenFile.Name = "btnOpenFile";
             btnOpenFile.Size = new Size(126, 108);
             btnOpenFile.TabIndex = 4;
-            btnOpenFile.Text = "ø≠±‚";
+            btnOpenFile.Text = "Ïó¥Í∏∞";
             btnOpenFile.UseVisualStyleBackColor = false;
             // 
             // btnSaveFile
             // 
-            btnSaveFile.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             btnSaveFile.BackColor = Color.FromArgb(128, 255, 128);
-            btnSaveFile.Font = new Font("«—ƒƒ ∞ÌµÒ", 14F, FontStyle.Bold, GraphicsUnit.Point, 129);
+            btnSaveFile.Font = new Font("ÌïúÏª¥ Í≥†Îîï", 14F, FontStyle.Bold, GraphicsUnit.Point, 129);
             btnSaveFile.Location = new Point(1062, 162);
             btnSaveFile.Name = "btnSaveFile";
             btnSaveFile.Size = new Size(126, 108);
             btnSaveFile.TabIndex = 5;
-            btnSaveFile.Text = "¿˙¿Â";
+            btnSaveFile.Text = "Ï†ÄÏû•";
             btnSaveFile.UseVisualStyleBackColor = false;
             btnSaveFile.Click += btnSaveFile_Click;
+            // 
+            // btnZoomOut
+            // 
+            btnZoomOut.Font = new Font("ÌïúÏª¥ Í≥†Îîï", 13.875F, FontStyle.Bold, GraphicsUnit.Point, 129);
+            btnZoomOut.Location = new Point(924, 282);
+            btnZoomOut.Name = "btnZoomOut";
+            btnZoomOut.Size = new Size(80, 42);
+            btnZoomOut.TabIndex = 7;
+            btnZoomOut.Text = "-";
+            btnZoomOut.UseVisualStyleBackColor = true;
+            // 
+            // lblZoomRate
+            // 
+            lblZoomRate.Font = new Font("ÌïúÏª¥ Í≥†Îîï", 10F, FontStyle.Bold, GraphicsUnit.Point, 129);
+            lblZoomRate.Location = new Point(1010, 282);
+            lblZoomRate.Name = "lblZoomRate";
+            lblZoomRate.Size = new Size(92, 42);
+            lblZoomRate.TabIndex = 8;
+            lblZoomRate.Text = "100%";
+            lblZoomRate.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // btnZoomIn
+            // 
+            btnZoomIn.Font = new Font("ÌïúÏª¥ Í≥†Îîï", 13.875F, FontStyle.Bold, GraphicsUnit.Point, 129);
+            btnZoomIn.Location = new Point(1108, 282);
+            btnZoomIn.Name = "btnZoomIn";
+            btnZoomIn.Size = new Size(80, 42);
+            btnZoomIn.TabIndex = 9;
+            btnZoomIn.Text = "+";
+            btnZoomIn.UseVisualStyleBackColor = true;
+            // 
+            // pnlCanvas
+            // 
+            pnlCanvas.AutoScroll = true;
+            pnlCanvas.BorderStyle = BorderStyle.FixedSingle;
+            pnlCanvas.Controls.Add(picCanvas);
+            pnlCanvas.Location = new Point(14, 324);
+            pnlCanvas.Name = "pnlCanvas";
+            pnlCanvas.Size = new Size(1174, 540);
+            pnlCanvas.TabIndex = 10;
             // 
             // picCanvas
             // 
             picCanvas.BackColor = Color.White;
             picCanvas.BorderStyle = BorderStyle.FixedSingle;
-            picCanvas.Location = new Point(14, 324);
+            picCanvas.Location = new Point(0, 0);
             picCanvas.Name = "picCanvas";
             picCanvas.Size = new Size(1174, 540);
+            picCanvas.SizeMode = PictureBoxSizeMode.StretchImage;
             picCanvas.TabIndex = 6;
             picCanvas.TabStop = false;
             // 
@@ -197,7 +241,10 @@ namespace SimplePaint
             AutoScaleDimensions = new SizeF(14F, 32F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1202, 878);
-            Controls.Add(picCanvas);
+            Controls.Add(pnlCanvas);
+            Controls.Add(btnZoomIn);
+            Controls.Add(lblZoomRate);
+            Controls.Add(btnZoomOut);
             Controls.Add(btnSaveFile);
             Controls.Add(btnOpenFile);
             Controls.Add(gbxdukke);
@@ -212,6 +259,7 @@ namespace SimplePaint
             gbxdukke.ResumeLayout(false);
             gbxdukke.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)trbLineWidth).EndInit();
+            pnlCanvas.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)picCanvas).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -231,5 +279,9 @@ namespace SimplePaint
         private Button btnLine;
         private Button btnCircle;
         private Button btnRectangle;
+        private Button btnZoomOut;
+        private Label lblZoomRate;
+        private Button btnZoomIn;
+        private Panel pnlCanvas;
     }
 }
