@@ -6,9 +6,14 @@
 - 사용한 플랫폼:
 	- C#, .NET Windows Forms, Visual Studio, GitHub
 - 사용한 컨트롤:
-	- Label, TextBox, ListBox, Button, ComboBox, Panel
+	- Label, Button, ComboBox, TrackBar, PictureBox, Panel
 - 사용한 기술과 구현한 기능:
-	- visual studio를 이용하여 ui 디자인
+	- Visual Studio를 이용하여 Windows Forms 기반 UI를 디자인
+	- Button을 이용하여 직선, 사각형, 원 도형 선택 기능 구현
+	- ComboBox를 이용하여 검정, 빨강, 파랑, 초록 색상 선택 기능 구현
+	- TrackBar를 이용하여 선 굵기를 단계별로 조절하는 기능 구현
+	- PictureBox와 Bitmap을 이용하여 실제 그림이 저장되는 캔버스 구성
+	- 마우스 드래그 이벤트를 이용하여 도형을 그리고, 저장과 외부 이미지 불러오기 기능까지 확장
 
 
 
@@ -53,6 +58,9 @@
   - 저장 형식 선택 : PNG, JPG, BMP 형식 중 하나를 선택해서 저장할 수 있도록 구현
   - 캔버스 저장 : PictureBox 화면이 아니라 실제 그림이 저장된 Bitmap 캔버스를 이미지 파일로 저장하도록 구현
   - 파일 이름 지정 : 사용자가 원하는 위치와 파일 이름을 직접 지정해서 저장할 수 있도록 구성
+  - 저장 포맷 처리 : SaveFileDialog에서 선택한 필터 번호를 확인하여 PNG는 ImageFormat.Png, JPG는 ImageFormat.Jpeg, BMP는 ImageFormat.Bmp로 저장되도록 구현
+  - 그리기 결과 보존 : 마우스로 그린 선, 사각형, 원이 canvasBitmap에 확정된 뒤 저장되므로 화면에 보이는 최종 그림과 저장되는 파일의 내용이 일치하도록 구성
+  - 사용성 개선 : 기본 파일 이름을 simplepaint로 지정하여 저장 창이 열렸을 때 사용자가 바로 파일 이름을 수정하거나 원하는 폴더를 선택할 수 있도록 구현
 
 ## 실행 화면 (과제4)
 - 코드의 실행 스크린샷과 구현 내용 설명
