@@ -24,11 +24,13 @@
 
 
 - 구현한 내용 (위 그림 참조)
-  - UI 구성 : 도형 선택, 색 선택, 굻기 선택 , 캔버스 구성
-  - 도형선택 : 버튼 3개를 이용해서 직선, 사각형, 원 선택. 
-  - 색 선택 : ComboBox를 이용해서 검은색, 빨간색, 파란색, 초록색 선택
-  - 선 굵기 선택: TrackBar 이용해서 선 굵기를 1~10단계로 선택
-  - 캔버스 : PictureBox를 이용해서 캔버스 구성.
+  - UI 구성 : 앱 이름을 표시하는 Label, 도형 선택 GroupBox, 색 선택 GroupBox, 선 두께 GroupBox, 열기/저장 Button, 그림을 표시하는 PictureBox를 배치하여 그림판 화면을 구성
+  - 도형 선택 : btnLine, btnRectangle, btnCircle 버튼 3개를 이용해서 사용자가 직선, 사각형, 원 중 원하는 도형을 선택할 수 있도록 구성
+  - 색 선택 : cmbColor ComboBox를 이용해서 검은색, 빨간색, 파란색, 초록색 중 하나를 선택할 수 있도록 구성
+  - 선 굵기 선택 : trbLineWidth TrackBar를 이용해서 선 굵기를 1~10단계로 조절할 수 있도록 구성
+  - 캔버스 구성 : picCanvas PictureBox를 이용하여 사용자가 실제로 그림을 그릴 수 있는 흰색 캔버스 영역을 배치
+  - 컨트롤 이름 지정 : lblAppName, gbxShape, gbxColor, gbxLineWidth, btnOpenFile, btnSaveFile처럼 기능을 알 수 있는 이름으로 지정하여 코드 가독성을 높임
+  - 화면 배치 : 도형 선택, 색 선택, 선 두께 선택 영역을 상단에 모으고, 아래쪽에는 넓은 캔버스를 배치하여 그림판처럼 사용할 수 있도록 구성
 
  
 
