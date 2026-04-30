@@ -36,7 +36,7 @@
             btnLine = new Button();
             gbxColor = new GroupBox();
             cmbColor = new ComboBox();
-            gbxdukke = new GroupBox();
+            gbxLineWidth = new GroupBox();
             trbLineWidth = new TrackBar();
             btnOpenFile = new Button();
             btnSaveFile = new Button();
@@ -47,7 +47,7 @@
             picCanvas = new PictureBox();
             gbxShape.SuspendLayout();
             gbxColor.SuspendLayout();
-            gbxdukke.SuspendLayout();
+            gbxLineWidth.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)trbLineWidth).BeginInit();
             pnlCanvas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)picCanvas).BeginInit();
@@ -142,18 +142,18 @@
             cmbColor.Size = new Size(204, 46);
             cmbColor.TabIndex = 0;
             // 
-            // gbxdukke
+            // gbxLineWidth
             // 
-            gbxdukke.AutoSize = true;
-            gbxdukke.Controls.Add(trbLineWidth);
-            gbxdukke.Font = new Font("휴먼둥근헤드라인", 12F, FontStyle.Regular, GraphicsUnit.Point, 129);
-            gbxdukke.ForeColor = Color.Blue;
-            gbxdukke.Location = new Point(618, 120);
-            gbxdukke.Name = "gbxdukke";
-            gbxdukke.Size = new Size(288, 190);
-            gbxdukke.TabIndex = 3;
-            gbxdukke.TabStop = false;
-            gbxdukke.Text = "선 두께";
+            gbxLineWidth.AutoSize = true;
+            gbxLineWidth.Controls.Add(trbLineWidth);
+            gbxLineWidth.Font = new Font("휴먼둥근헤드라인", 12F, FontStyle.Regular, GraphicsUnit.Point, 129);
+            gbxLineWidth.ForeColor = Color.Blue;
+            gbxLineWidth.Location = new Point(618, 120);
+            gbxLineWidth.Name = "gbxLineWidth";
+            gbxLineWidth.Size = new Size(288, 190);
+            gbxLineWidth.TabIndex = 3;
+            gbxLineWidth.TabStop = false;
+            gbxLineWidth.Text = "선 두께";
             // 
             // trbLineWidth
             // 
@@ -247,7 +247,7 @@
             Controls.Add(btnZoomOut);
             Controls.Add(btnSaveFile);
             Controls.Add(btnOpenFile);
-            Controls.Add(gbxdukke);
+            Controls.Add(gbxLineWidth);
             Controls.Add(gbxColor);
             Controls.Add(gbxShape);
             Controls.Add(lblAppName);
@@ -256,8 +256,8 @@
             Load += Form1_Load;
             gbxShape.ResumeLayout(false);
             gbxColor.ResumeLayout(false);
-            gbxdukke.ResumeLayout(false);
-            gbxdukke.PerformLayout();
+            gbxLineWidth.ResumeLayout(false);
+            gbxLineWidth.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)trbLineWidth).EndInit();
             pnlCanvas.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)picCanvas).EndInit();
@@ -271,7 +271,7 @@
         private GroupBox gbxShape;
         private GroupBox gbxColor;
         private ComboBox cmbColor;
-        private GroupBox gbxdukke;
+        private GroupBox gbxLineWidth;
         private Button btnOpenFile;
         private Button btnSaveFile;
         private PictureBox picCanvas;
