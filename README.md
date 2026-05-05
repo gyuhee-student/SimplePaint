@@ -1,4 +1,4 @@
-# (C# 코딩) OOOOO
+# (C# 코딩) SimplePaint
 
 ## 개요
 - C# 프로그래밍 학습
